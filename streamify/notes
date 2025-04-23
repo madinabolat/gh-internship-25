@@ -1,0 +1,4 @@
+1. stopped at 4. core.module.ts
+2. why graphql.config.ts is showing error? 
+wrong path with @/src because no src under @? src is under server? 
+should we change tsconfig.json but then we change everywhere? 
