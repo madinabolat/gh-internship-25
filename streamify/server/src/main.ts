@@ -11,10 +11,18 @@
 import { ValidationPipe } from '@nestjs/common'
 import { ConfigService } from '@nestjs/config'
 import { NestFactory } from '@nestjs/core'
-import RedisStore from 'connect-redis'
+
+//import * as session from 'express-session'
+import session from 'express-session'
+
+// @ts-ignore
+import connectRedis from 'connect-redis'
+const RedisStore = require('connect-redis')(session)
+
 import * as cookieParser from 'cookie-parser'
-import * as session from 'express-session'
-import * as graphqlUploadExpress from 'graphql-upload/graphqlUploadExpress.js'
+
+// @ts-ignore
+import graphqlUploadExpress from 'graphql-upload'
 
 // Core NestJS module
 import { CoreModule } from './core/core.module'

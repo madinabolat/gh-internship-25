@@ -1,7 +1,7 @@
 import type { ApolloDriverConfig } from '@nestjs/apollo'
 import { ConfigService } from '@nestjs/config'
 import { join } from 'path'
-import { isDev } from '@/src/shared/utils/is-dev.util' 
+import { isDev } from '@/shared/utils/is-dev.util' 
 //MB: but no src under @? src is under server - should we change tsconfig.js? 
 
 export function getGraphQLConfig(
