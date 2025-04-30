@@ -12,11 +12,11 @@ import { ValidationPipe } from '@nestjs/common'
 import { ConfigService } from '@nestjs/config'
 import { NestFactory } from '@nestjs/core'
 
-//import * as session from 'express-session'
-import session from 'express-session'
+import * as session from 'express-session'
+//import session from 'express-session'
 
-import RedisStore from 'connect-redis';
-
+import * as connectRedis from 'connect-redis';
+const RedisStore = connectRedis.default;
 import * as cookieParser from 'cookie-parser'
 
 // @ts-ignore
