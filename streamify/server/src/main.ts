@@ -15,9 +15,7 @@ import { NestFactory } from '@nestjs/core'
 //import * as session from 'express-session'
 import session from 'express-session'
 
-// @ts-ignore
-import connectRedis from 'connect-redis'
-const RedisStore = require('connect-redis')(session)
+import RedisStore from 'connect-redis';
 
 import * as cookieParser from 'cookie-parser'
 
