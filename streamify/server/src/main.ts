@@ -18,14 +18,14 @@ import * as session from 'express-session'
 
 
 ///look at this - was getting errors: 
-import connectRedis from 'connect-redis'; 
-const RedisStore = connectRedis as any;
-
+import connectRedis from 'connect-redis';
+const RedisStore = connectRedis(session);
 
 import * as cookieParser from 'cookie-parser'
 
 // @ts-ignore
-import graphqlUploadExpress from 'graphql-upload'
+//import graphqlUploadExpress from 'graphql-upload'
+const { graphqlUploadExpress } = require('graphql-upload');
 
 // Core NestJS module
 import { CoreModule } from './core/core.module'
