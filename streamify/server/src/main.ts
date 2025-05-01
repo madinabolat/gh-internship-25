@@ -15,8 +15,13 @@ import { NestFactory } from '@nestjs/core'
 import * as session from 'express-session'
 //import session from 'express-session'
 
-import * as connectRedis from 'connect-redis';
-const RedisStore = connectRedis.default;
+
+
+///look at this - was getting errors: 
+import connectRedis from 'connect-redis'; 
+const RedisStore = connectRedis as any;
+
+
 import * as cookieParser from 'cookie-parser'
 
 // @ts-ignore

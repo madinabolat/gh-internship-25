@@ -8,3 +8,4 @@ week 3:
 2. wire up accountmodule
 do we create a new core.module.ts under src/core ? 
 or what we have core.module.ts under core/config? 
+
