@@ -1,31 +1,10 @@
-// automatic setup: 
-// import { NestFactory } from '@nestjs/core';
-// import { AppModule } from './app.module';
-
-// async function bootstrap() {
-//   const app = await NestFactory.create(AppModule);
-//   await app.listen(process.env.PORT ?? 3000);
-// }
-// bootstrap();
-
 import { ValidationPipe } from '@nestjs/common'
 import { ConfigService } from '@nestjs/config'
 import { NestFactory } from '@nestjs/core'
-
-import * as session from 'express-session'
-//import session from 'express-session'
-
-
-
-///look at this - was getting errors: 
-import connectRedis from 'connect-redis';
-const RedisStore = connectRedis(session);
-
+import RedisStore from 'connect-redis'
 import * as cookieParser from 'cookie-parser'
-
-// @ts-ignore
-//import graphqlUploadExpress from 'graphql-upload'
-const { graphqlUploadExpress } = require('graphql-upload');
+import * as session from 'express-session'
+import * as graphqlUploadExpress from 'graphql-upload/graphqlUploadExpress.js'
 
 // Core NestJS module
 import { CoreModule } from './core/core.module'

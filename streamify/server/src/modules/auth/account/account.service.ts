@@ -4,11 +4,12 @@ import { Injectable } from '@nestjs/common';
 export class AccountService {
     findAll() {
         return [
-          {
-            id: '1',
-            email: 'test@example.com',
-            name: 'Test User',
-          },
+         // "Helloworld"
+          // {
+          //   id: '1',
+          //   email: 'test@example.com',
+          //   name: 'Test User',
+          // },
         ];
       }
 }

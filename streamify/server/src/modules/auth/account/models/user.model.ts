@@ -3,16 +3,19 @@ import type { User } from '@/prisma/generated'
 
 @ObjectType()
 export class UserModel implements User {
-  @Field(() => ID)
+  //@Field(() => ID)
+  @Field(() => ID, { nullable: true })
   public id: string
 
-  @Field(() => String)
+//  @Field(() => String)
+  @Field(() => String, { nullable: true })
   public email: string
 
   @Field(() => String)
   public password: string
 
-  @Field(() => String)
+  //@Field(() => String)
+  @Field(() => String, { nullable: true })
   public username: string
 
   @Field(() => String)
