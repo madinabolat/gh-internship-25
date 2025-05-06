@@ -11,3 +11,5 @@ or what we have core.module.ts under core/config?
 
 
 done
+
+removed redis from outside of streamify folder - not sure why it was there
