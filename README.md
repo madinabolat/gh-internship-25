@@ -1,1 +1,0 @@
-This is a repository for GH Internship building Streamify app.
